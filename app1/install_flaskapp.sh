@@ -5,7 +5,7 @@ cd FlaskApp/
 yum -y install python3-pip
 pip install -r requirements.txt
 yum -y install stress
-export PHOTO_BUCKET=${SUB_PHOTOS_BUCKET}
-export AWS_DEFAULT_REGION=us-west-2
+export PHOTOS_BUCKET=${SUB_PHOTOS_BUCKET}
+export AWS_DEFAULT_REGION=us-east-2
 export DYNAMO_MODE=on
 FLASK_APP=application.py /usr/local/bin/flask run --host=0.0.0.0 --port=80
